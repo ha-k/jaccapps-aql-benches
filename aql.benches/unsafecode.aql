@@ -1,0 +1,14 @@
+define signature f : int -> int;
+define signature g : int -> int;
+define signature h : int -> int;
+define signature k : int -> int;
+
+define f (n) = if n==0 then g(0)+h(1) else 3;
+f(0);g(0);h(0);k(0);
+define g (n) = if n==0 then h(1)-k(2) else 2;
+f(0);g(0);h(0);k(0);
+define h (n) = if n==0 then k(2)*f(3) else 1;
+f(0);g(0);h(0);k(0);
+define k (n) = if n==0 then g(3)%h(4) else 0;
+f(0);g(0);h(0);k(0);
+

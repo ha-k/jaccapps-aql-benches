@@ -1,0 +1,6 @@
+*** Defined a : forall A,B. (A -> B, A) -> B
+*** Defined c : forall A. ([int] -> A) -> A
+*** Defined i : forall A. A -> A
+*** Defined j : int -> int
+0 : [int]
+0 : int

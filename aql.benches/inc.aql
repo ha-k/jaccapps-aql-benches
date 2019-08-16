@@ -1,0 +1,7 @@
+"This is inc.aql...";
+
+#include "inc1";
+
+"This is again inc.aql...";
+
+1:real;

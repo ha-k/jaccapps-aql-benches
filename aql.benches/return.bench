@@ -1,0 +1,8 @@
+1c1
+< *** Static Semantics Error: (typing) not within an exitable scope - see return.aql (line 3, columns 1..9)
+---
+> *** Static Semantics Error: (typing) not within an exitable scope - see return.aql (line 3, columns 1...9)
+13c13
+< *** Static Semantics Error: (typing) incompatible type: string, int - see return.aql (line 13, column 16).. (line 14, column 11)
+---
+> *** Static Semantics Error: (typing) incompatible type: string, int - see return.aql (line 13, column 16)... (line 14, column 11)

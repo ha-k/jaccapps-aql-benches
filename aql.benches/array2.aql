@@ -1,0 +1,83 @@
+let a = new <int,int,int>[0..1][0..1][0..1];
+in
+{
+  a[0][0][0] = <0,0,0>;
+  write("a[0][0][0] = "); write(a[0][0][0]); write("\n");
+  a[0][0][1] = <0,0,1>;
+  write("a[0][0][1] = "); write(a[0][0][1]); write("\n");
+  a[0][1][0] = <0,1,0>;
+  write("a[0][1][0] = "); write(a[0][1][0]); write("\n");
+  a[0][1][1] = <0,1,1>;
+  write("a[0][1][1] = "); write(a[0][1][1]); write("\n");
+  a[1][0][0] = <1,0,0>;
+  write("a[1][0][0] = "); write(a[1][0][0]); write("\n");
+  a[1][0][1] = <1,0,1>;
+  write("a[1][0][1] = "); write(a[1][0][1]); write("\n");
+  a[1][1][0] = <1,1,0>;
+  write("a[1][1][0] = "); write(a[1][1][0]); write("\n");
+  a[1][1][1] = <1,1,1>;
+  write("a[1][1][1] = "); write(a[1][1][1]); write("\n");
+  
+  write("\n");
+  
+  write("a[0][0][0] = "); write(a[0][0][0]); write("\n");
+  write("a[0][0][1] = "); write(a[0][0][1]); write("\n");
+  write("a[0][1][0] = "); write(a[0][1][0]); write("\n");
+  write("a[0][1][1] = "); write(a[0][1][1]); write("\n");
+  write("a[1][0][0] = "); write(a[1][0][0]); write("\n");
+  write("a[1][0][1] = "); write(a[1][0][1]); write("\n");
+  write("a[1][1][0] = "); write(a[1][1][0]); write("\n");
+  write("a[1][1][1] = "); write(a[1][1][1]); write("\n");
+  
+  write("a[0][0] = "); write(a[0][0]); write("\n");
+  write("a[1][0] = "); write(a[1][0]); write("\n");
+  write("a[0][1] = "); write(a[0][1]); write("\n");
+  write("a[1][1] = "); write(a[1][1]); write("\n");
+
+  write("a[0] = "); write(a[0]); write("\n");
+  write("a[1] = "); write(a[1]); write("\n");
+
+  write("a = "); write(a); write("\n");
+ }; 
+
+let a = new int[0..1][0..1][0..1];
+in
+{
+  a[0][0][0] = 1;
+  write("a[0][0][0] = "); write(a[0][0][0]); write("\n");
+  a[0][0][1] = 2;
+  write("a[0][0][1] = "); write(a[0][0][1]); write("\n");
+  a[0][1][0] = 3;
+  write("a[0][1][0] = "); write(a[0][1][0]); write("\n");
+  a[0][1][1] = 4;
+  write("a[0][1][1] = "); write(a[0][1][1]); write("\n");
+  a[1][0][0] = 5;
+  write("a[1][0][0] = "); write(a[1][0][0]); write("\n");
+  a[1][0][1] = 6;
+  write("a[1][0][1] = "); write(a[1][0][1]); write("\n");
+  a[1][1][0] = 7;
+  write("a[1][1][0] = "); write(a[1][1][0]); write("\n");
+  a[1][1][1] = 8;
+  write("a[1][1][1] = "); write(a[1][1][1]); write("\n");
+  
+  write("\n");
+
+  write("a[0][0][0] = "); write(a[0][0][0]); write("\n");
+  write("a[0][0][1] = "); write(a[0][0][1]); write("\n");
+  write("a[0][1][0] = "); write(a[0][1][0]); write("\n");
+  write("a[0][1][1] = "); write(a[0][1][1]); write("\n");
+  write("a[1][0][0] = "); write(a[1][0][0]); write("\n");
+  write("a[1][0][1] = "); write(a[1][0][1]); write("\n");
+  write("a[1][1][0] = "); write(a[1][1][0]); write("\n");
+  write("a[1][1][1] = "); write(a[1][1][1]); write("\n");
+  
+  write("a[0][0] = "); write(a[0][0]); write("\n");
+  write("a[1][0] = "); write(a[1][0]); write("\n");
+  write("a[0][1] = "); write(a[0][1]); write("\n");
+  write("a[1][1] = "); write(a[1][1]); write("\n");
+
+  write("a[0] = "); write(a[0]); write("\n");
+  write("a[1] = "); write(a[1]); write("\n");
+
+  write("a = "); write(a); write("\n");
+ };

@@ -1,0 +1,33 @@
+*** class Counter
+	{
+	  reading : int;
+
+	  method set : int -> Counter;
+	}
+*** Defined writeln : forall A. A -> void
+3
+() : void
+*** class Foo
+	{
+	  bar : Bar;
+	}
+*** class Bar
+	{
+	  foo : Foo;
+	}
+*** class Baz
+	{
+	  foo : Foo;
+	  bar : Bar;
+	}
+Baz#0{foo = Foo#0{bar = Bar#0{foo = Foo#0}}, bar = Bar#0} : Baz
+*** class Test
+	{
+	  foo : int -> real;
+	}
+*** Defined f : int -> real
+*** Defined test : Test
+Test#0{foo = null} : Test
+*** Dynamic Semantics Error: (null value) can't apply a null function - see class.aql (line 35, columns 1..12)
+<function> : int -> real
+4.15 : real

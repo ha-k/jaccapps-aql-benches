@@ -1,0 +1,78 @@
+*** Defined S : forall A,B,C. ((A, B) -> C, A -> B, A) -> C
+*** Defined K : forall A,B. (A, B) -> A
+*** Defined I : forall A. A -> A
+*** Defined B : forall A,B,C. (A -> B, C -> A, C) -> B
+*** Defined C : forall A,B,C. ((A, B) -> C, B, A) -> C
+*** Defined Sp : forall A,B,C,D. ((A, B) -> C, D -> A, D -> B, D) -> C
+*** Defined Bp : forall A,B,C,D. (A -> B, C -> A, D -> C, D) -> B
+*** Defined Cp : forall A,B,C,D. ((A, B) -> C, D -> A, B, D) -> C
+<function> : forall A,B. (A -> B, A) -> A
+<function> : forall A. A -> A
+<function> : forall A,B. (A, B) -> A
+<function> : forall A,B,C. A -> (B, C) -> B
+<function> : forall A,B. (A, B) -> A
+<function> : forall A,B,C. A -> (B, C) -> B
+*** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, int - see ski.aql (line 19, columns 1..5)
+1 : int
+<function> : forall A. A -> [int]
+<function> : forall A,B. (A, B) -> A
+<function> : forall A. A -> [int]
+<function> : forall A,B. (A, B) -> A
+*** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, boolean - see ski.aql (line 26, columns 1..5)
+true : boolean
+<function> : forall A. A -> [boolean]
+<function> : forall A,B. (A, B) -> A
+<function> : forall A. A -> [boolean]
+<function> : forall A,B. (A, B) -> A
+10() : void
+*** Defined foo : int -> int
+2 : int
+1 : int
+*** Defined fact : int -> int
+3628800 : int
+*** Declared type for aux : (int, int) -> int
+*** Defined aux : (int, int) -> int
+*** Defined rfact : int -> int
+3628800 : int
+*** Declared type for rrfact : int -> int
+*** Defined rrfact : int -> int
+3628800 : int
+*** Declared type for f : int -> int
+*** Declared type for g : int -> int
+*** Declared type for h : int -> int
+*** Declared type for k : int -> int
+*** Defined f : int -> int
+3 : int
+*** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see ski.aql (line 58, columns 6..10)
+*** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 58, columns 11..15)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 58, columns 16..20)
+*** Defined g : int -> int
+3 : int
+2 : int
+*** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 60, columns 11..15)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 60, columns 16..20)
+*** Defined h : int -> int
+3 : int
+2 : int
+1 : int
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 62, columns 16..20)
+*** Defined k : int -> int
+3 : int
+2 : int
+1 : int
+0 : int
+*** Defined a : forall A,B. (A -> B, A) -> B
+*** Defined b : forall A. ([int] -> A) -> A
+*** Defined c : forall A. ([int] -> A) -> A
+*** Defined d : forall A. ([boolean] -> A) -> A
+*** Defined i : forall A. A -> A
+*** Defined j : int -> int
+*** Defined l : boolean -> boolean
+0 : [int]
+0 : int
+true : [boolean]
+true : boolean
+*** Defined x : void
+() : void
+That's all, Folks!...
+() : void

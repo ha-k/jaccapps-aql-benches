@@ -1,0 +1,6 @@
+*** Defined new type foo = <a:int,b:int>
+*** Defined a : foo -> int
+*** Defined b : foo -> int
+*** Defined sp : int -> {foo}
+*** Defined test : int -> int
+2500 : int

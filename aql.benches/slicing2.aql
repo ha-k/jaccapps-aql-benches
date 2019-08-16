@@ -1,0 +1,23 @@
+structure foo { a : int, b : int };
+
+define sp (n : int) = let s = set{};
+                       i = 0;
+                    in { while i < n
+		            do let j = 0;
+                                in { while j < n
+                                        do { (<i,j>:foo)+s;
+                                             j = j+1;
+                                           };
+                                     i = i+1;
+                                   };
+                         s;
+                       };
+
+define test (n:int) = let S = sp(n);
+                   in  [+,0] { 1 | x <- S
+                                 , y <- S
+                                 , x.a == y.b
+                                 , x.b == y.a
+                             };
+
+test(50);

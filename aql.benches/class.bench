@@ -1,0 +1,4 @@
+31c31
+< *** Dynamic Semantics Error: (null value) can't apply a null function - see class.aql (line 35, columns 1..12)
+---
+> *** Dynamic Semantics Error: (null value) can't apply a null function - see class.aql (line 35, columns 1...12)

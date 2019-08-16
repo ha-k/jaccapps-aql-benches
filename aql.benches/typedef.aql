@@ -1,0 +1,36 @@
+define type name INT = int;
+
+define f(x:INT) = $x + 1;
+
+define one = 1 as INT;
+
+f(1);	// error
+f(one); // OK
+
+
+define type name Pair(A,B) = <A,B>;
+
+define g(x:Pair(int,real)) = let y = $x;
+                              in <y@1+y@2, "hello"> as Pair;
+
+define p = <1,2.3> as Pair;
+
+g(p);
+
+define type name NINT = INT;
+
+define none = one as NINT;
+
+$one;
+
+$none;
+
+$$none;
+
+none;
+
+3 as INT;
+
+4 as INT as NINT;
+
+5 as NINT;

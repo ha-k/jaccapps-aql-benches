@@ -1,0 +1,24 @@
+*** Declared type for f : int -> int
+*** Declared type for g : int -> int
+*** Declared type for h : int -> int
+*** Declared type for k : int -> int
+*** Defined f : int -> int
+*** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 1..5)
+*** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see unsafecode.aql (line 7, columns 6..10)
+*** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 11..15)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 7, columns 16..20)
+*** Defined g : int -> int
+*** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 1..5)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 6..10)
+*** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 11..15)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 16..20)
+*** Defined h : int -> int
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 1..5)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 6..10)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 11..15)
+*** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 16..20)
+*** Defined k : int -> int
+2 : int
+1 : int
+0 : int
+0 : int

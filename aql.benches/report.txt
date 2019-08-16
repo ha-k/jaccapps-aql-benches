@@ -1,0 +1,157 @@
+*** Results of non-regression tests for AQL***************************
+--------------------typedef.bench ------------------------------------
+4c4
+< *** Static Semantics Error: (typing) incompatible type: no type allowed for 'f' fits forall A. int -> A - see typedef.aql (line 7, columns 1..2)
+---
+> *** Static Semantics Error: (typing) incompatible type: no type allowed for 'f' fits forall A. int -> A - see typedef.aql (line 7, columns 1...2)
+18c18
+< *** Static Semantics Error: (typing) incompatible type: int, INT - see typedef.aql (line 36, columns 1..3)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, INT - see typedef.aql (line 36, columns 1...3)
+--------------------inc.bench ----------------------------------------
+9c9
+< *** Syntax Error: circular file inclusion of file: inc.aql - see inc3 (line 3, columns 10..18)
+---
+> *** Syntax Error: circular file inclusion of file: inc.aql - see inc3 (line 3, columns 10...18)
+11c11
+< *** Static Semantics Error: (typing) incompatible type: int, void - see inc3 (line 7, columns 1..6)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, void - see inc3 (line 7, columns 1...6)
+13c13
+< *** Static Semantics Error: (typing) incompatible type: int, boolean - see inc2 (line 7, columns 1..9)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, boolean - see inc2 (line 7, columns 1...9)
+15c15
+< *** Static Semantics Error: (typing) incompatible type: int, string - see inc1 (line 7, columns 1..8)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, string - see inc1 (line 7, columns 1...8)
+17c17
+< *** Static Semantics Error: (typing) incompatible type: int, real - see inc.aql (line 7, columns 1..6)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, real - see inc.aql (line 7, columns 1...6)
+--------------------class.bench --------------------------------------
+31c31
+< *** Dynamic Semantics Error: (null value) can't apply a null function - see class.aql (line 35, columns 1..12)
+---
+> *** Dynamic Semantics Error: (null value) can't apply a null function - see class.aql (line 35, columns 1...12)
+--------------------unsafecode.bench ---------------------------------
+6,9c6,9
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 1..5)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see unsafecode.aql (line 7, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 7, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 1...5)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see unsafecode.aql (line 7, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 7, columns 16...20)
+11,14c11,14
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 1..5)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 1...5)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 16...20)
+16,19c16,19
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 1..5)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 1...5)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 16...20)
+--------------------set.bench ----------------------------------------
+4c4
+< *** Dynamic Semantics Error: (no such element) 17 doesn't belong to this set - see set.aql (line 3, columns 1..11)
+---
+> *** Dynamic Semantics Error: (no such element) 17 doesn't belong to this set - see set.aql (line 3, columns 1...11)
+9,10c9,10
+< *** Dynamic Semantics Error: (no such element) 8 has no successor in this set - see set.aql (line 8, columns 1..17)
+< *** Dynamic Semantics Error: (no such element) 4 has no predecessor in this set - see set.aql (line 9, columns 1..18)
+---
+> *** Dynamic Semantics Error: (no such element) 8 has no successor in this set - see set.aql (line 8, columns 1...17)
+> *** Dynamic Semantics Error: (no such element) 4 has no predecessor in this set - see set.aql (line 9, columns 1...18)
+18c18
+< *** Dynamic Semantics Error: (no such element) z doesn't belong to this set - see set.aql (line 17, columns 1..12)
+---
+> *** Dynamic Semantics Error: (no such element) z doesn't belong to this set - see set.aql (line 17, columns 1...12)
+23,24c23,24
+< *** Dynamic Semantics Error: (no such element) c has no successor in this set - see set.aql (line 22, columns 1..17)
+< *** Dynamic Semantics Error: (no such element) a has no predecessor in this set - see set.aql (line 23, columns 1..18)
+---
+> *** Dynamic Semantics Error: (no such element) c has no successor in this set - see set.aql (line 22, columns 1...17)
+> *** Dynamic Semantics Error: (no such element) a has no predecessor in this set - see set.aql (line 23, columns 1...18)
+32c32
+< *** Dynamic Semantics Error: (no such element) 3.14 doesn't belong to this set - see set.aql (line 31, columns 1..13)
+---
+> *** Dynamic Semantics Error: (no such element) 3.14 doesn't belong to this set - see set.aql (line 31, columns 1...13)
+37,38c37,38
+< *** Dynamic Semantics Error: (no such element) 7.8 has no successor in this set - see set.aql (line 36, columns 1..17)
+< *** Dynamic Semantics Error: (no such element) 1.2 has no predecessor in this set - see set.aql (line 37, columns 1..18)
+---
+> *** Dynamic Semantics Error: (no such element) 7.8 has no successor in this set - see set.aql (line 36, columns 1...17)
+> *** Dynamic Semantics Error: (no such element) 1.2 has no predecessor in this set - see set.aql (line 37, columns 1...18)
+--------------------return.bench -------------------------------------
+1c1
+< *** Static Semantics Error: (typing) not within an exitable scope - see return.aql (line 3, columns 1..9)
+---
+> *** Static Semantics Error: (typing) not within an exitable scope - see return.aql (line 3, columns 1...9)
+13c13
+< *** Static Semantics Error: (typing) incompatible type: string, int - see return.aql (line 13, column 16).. (line 14, column 11)
+---
+> *** Static Semantics Error: (typing) incompatible type: string, int - see return.aql (line 13, column 16)... (line 14, column 11)
+--------------------struct.bench -------------------------------------
+11,12c11,12
+< *** Static Semantics Error: (typing) incompatible type: no type allowed for 'q' fits foo - see struct.aql (line 7, columns 5..6)
+< *** Static Semantics Error: (typing) incompatible type: no type allowed for 'p' fits bar - see struct.aql (line 8, columns 5..6)
+---
+> *** Static Semantics Error: (typing) incompatible type: no type allowed for 'q' fits foo - see struct.aql (line 7, columns 5...6)
+> *** Static Semantics Error: (typing) incompatible type: no type allowed for 'p' fits bar - see struct.aql (line 8, columns 5...6)
+--------------------ski.bench ----------------------------------------
+15c15
+< *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, int - see ski.aql (line 19, columns 1..5)
+---
+> *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, int - see ski.aql (line 19, columns 1...5)
+21c21
+< *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, boolean - see ski.aql (line 26, columns 1..5)
+---
+> *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, boolean - see ski.aql (line 26, columns 1...5)
+46,48c46,48
+< *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see ski.aql (line 58, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 58, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 58, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see ski.aql (line 58, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 58, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 58, columns 16...20)
+52,53c52,53
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 60, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 60, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 60, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 60, columns 16...20)
+58c58
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 62, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 62, columns 16...20)
+--------------------array.bench --------------------------------------
+9,10c9,10
+< *** Dynamic Semantics Error: (null value) can't access element of a null array - see array.aql (line 9, columns 1..8)
+< *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 10, columns 1..8)
+---
+> *** Dynamic Semantics Error: (null value) can't access element of a null array - see array.aql (line 9, columns 1...8)
+> *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 10, columns 1...8)
+29c29
+< *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 61, columns 1..6)
+---
+> *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 61, columns 1...6)
+51c51
+< *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 83, columns 1..12)
+---
+> *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 83, columns 1...12)
+**********************************************************************

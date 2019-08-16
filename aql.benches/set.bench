@@ -1,0 +1,30 @@
+4c4
+< *** Dynamic Semantics Error: (no such element) 17 doesn't belong to this set - see set.aql (line 3, columns 1..11)
+---
+> *** Dynamic Semantics Error: (no such element) 17 doesn't belong to this set - see set.aql (line 3, columns 1...11)
+9,10c9,10
+< *** Dynamic Semantics Error: (no such element) 8 has no successor in this set - see set.aql (line 8, columns 1..17)
+< *** Dynamic Semantics Error: (no such element) 4 has no predecessor in this set - see set.aql (line 9, columns 1..18)
+---
+> *** Dynamic Semantics Error: (no such element) 8 has no successor in this set - see set.aql (line 8, columns 1...17)
+> *** Dynamic Semantics Error: (no such element) 4 has no predecessor in this set - see set.aql (line 9, columns 1...18)
+18c18
+< *** Dynamic Semantics Error: (no such element) z doesn't belong to this set - see set.aql (line 17, columns 1..12)
+---
+> *** Dynamic Semantics Error: (no such element) z doesn't belong to this set - see set.aql (line 17, columns 1...12)
+23,24c23,24
+< *** Dynamic Semantics Error: (no such element) c has no successor in this set - see set.aql (line 22, columns 1..17)
+< *** Dynamic Semantics Error: (no such element) a has no predecessor in this set - see set.aql (line 23, columns 1..18)
+---
+> *** Dynamic Semantics Error: (no such element) c has no successor in this set - see set.aql (line 22, columns 1...17)
+> *** Dynamic Semantics Error: (no such element) a has no predecessor in this set - see set.aql (line 23, columns 1...18)
+32c32
+< *** Dynamic Semantics Error: (no such element) 3.14 doesn't belong to this set - see set.aql (line 31, columns 1..13)
+---
+> *** Dynamic Semantics Error: (no such element) 3.14 doesn't belong to this set - see set.aql (line 31, columns 1...13)
+37,38c37,38
+< *** Dynamic Semantics Error: (no such element) 7.8 has no successor in this set - see set.aql (line 36, columns 1..17)
+< *** Dynamic Semantics Error: (no such element) 1.2 has no predecessor in this set - see set.aql (line 37, columns 1..18)
+---
+> *** Dynamic Semantics Error: (no such element) 7.8 has no successor in this set - see set.aql (line 36, columns 1...17)
+> *** Dynamic Semantics Error: (no such element) 1.2 has no predecessor in this set - see set.aql (line 37, columns 1...18)

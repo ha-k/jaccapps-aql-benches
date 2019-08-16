@@ -1,0 +1,9 @@
+*** class Foo(A)
+	{
+	  foo : A;
+
+	  method update : A -> Foo(A);
+	}
+*** Defined Foo : forall A. A -> Foo(A)
+*** Defined f : Foo(int)
+Foo#0{foo = 1} : Foo(int)

@@ -1,0 +1,22 @@
+*** class Foo(A)
+	{
+	  a : A;
+	}
+Foo#0{a = 0.0} : Foo(real)
+*** class Bar(A,B)
+	{
+	  a : A;
+	  b : B;
+	}
+*** Defined type alias Buz(A) = Bar(A,A)
+	{
+	  a : A;
+	  b : A;
+	}
+Bar#0{a = 0, b = 0} : Bar(int,int)
+*** Defined new type Boz(A) = Bar(A,A)
+	{
+	  a : A;
+	  b : A;
+	}
+Bar#0{a = 0, b = 0} : Boz(int)

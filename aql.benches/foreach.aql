@@ -1,0 +1,12 @@
+foreach (i <- 0..9, i%2 == 0)
+  write(i+"\n");
+
+foreach (i <- 0..5, i%2 == 0)
+  foreach (j <- 0..5)
+    write(i+" "+j+"\n");
+
+// What's next is in fact transformed into the above...
+
+foreach (i <- 0..5)
+  foreach (j <- 0..5, i%2 == 0)
+    write(i+" "+j+"\n");

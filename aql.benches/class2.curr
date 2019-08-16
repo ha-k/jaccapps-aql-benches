@@ -1,0 +1,14 @@
+*** class Pair(A,B)
+	{
+	  fst : A;
+	  snd : B;
+
+	  method setFst : A -> Pair(A,B);
+	  method setSnd : B -> Pair(A,B);
+	  method allocate : (A, B) -> Pair(A,B);
+	}
+*** Defined Pair : forall A,B. (A, B) -> Pair(A,B)
+*** Defined swap : forall A. Pair(A,A) -> Pair(A,A)
+*** Defined p : Pair(int,int)
+Pair#0{fst = 1, snd = 2} : Pair(int,int)
+Pair#0{fst = 2, snd = 1} : Pair(int,int)

@@ -1,0 +1,52 @@
+#[#[false,false,false]#,#[false,false,false]#,#[false,false,false]#]# : boolean[int][int]
+*** Defined b : boolean[int][int]
+#[null,null,null]# : boolean[int][int]
+#[false,false]# : boolean[int]
+#[#[false,false]#,null,null]# : boolean[int][int]
+#[false,false,false,false]# : boolean[int]
+#[#[false,false]#,#[false,false,false,false]#,null]# : boolean[int][int]
+false : boolean
+*** Dynamic Semantics Error: (null value) can't access element of a null array - see array.aql (line 9, columns 1..8)
+*** Dynamic Semantics Error: (array bound violation) - see array.aql (line 10, columns 1..8)
+*** Defined set : int[int][int][int][int] -> void
+*** Defined see : int[int][int][int][int] -> void
+*** Defined a : int[int][int][int][int]
+#[#[#[#[0,0]#,#[0,0]#]#,#[#[0,0]#,#[0,0]#]#]#,#[#[#[0,0]#,#[0,0]#]#,#[#[0,0]#,#[0,0]#]#]#]# : int[int][int][int][int]
+() : void
+ 0 1	 1 2	
+ 1 2	 2 3	
+
+
+ 1 2	 2 3	
+ 2 3	 3 4	
+
+
+() : void
+*** Defined intset : {int}
+{12,17,9,8,4} : {int}
+*** Defined ia : <int,real>[{int}]
+#[12:null,17:null,9:null,8:null,4:null]# : <int,real>[{int}]
+*** Dynamic Semantics Error: (array bound violation) - see array.aql (line 61, columns 1..6)
+<2,3.4> : <int,real>
+#[12:null,17:null,9:null,8:null,4:<2,3.4>]# : <int,real>[{int}]
+*** Defined strset : {string}
+{"tata","titi","toto"} : {string}
+*** Defined sa : real[{string}][int..int]
+#["tata":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#,"titi":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#,"toto":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#]# : real[{string}][int..int]
+#["tata":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#,"titi":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#,"toto":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#]# : real[{string}][int..int]
+3.14 : real
+#["tata":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#,"titi":#[4:0.0,5:3.14,6:0.0,7:0.0,8:0.0]#,"toto":#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]#]# : real[{string}][int..int]
+#[4:0.0,5:0.0,6:0.0,7:0.0,8:0.0]# : real[int..int]
+#[4:0.0,5:3.14,6:0.0,7:0.0,8:0.0]# : real[int..int]
+*** Defined prset : {<int,real>}
+{<4,5.6>,<1,2.3>} : {<int,real>}
+*** Defined pa : string[{<int,real>}]
+#[<4,5.6>:"",<1,2.3>:""]# : string[{<int,real>}]
+#[<4,5.6>:"",<1,2.3>:""]# : string[{<int,real>}]
+"hello" : string
+"good bye" : string
+#[<4,5.6>:"hello",<1,2.3>:"good bye"]# : string[{<int,real>}]
+"good bye" : string
+"hello" : string
+*** Dynamic Semantics Error: (array bound violation) - see array.aql (line 83, columns 1..12)
+#[1:#["a":#[0,0,0]#,"b":#[0,0,0]#]#,2:#["a":#[0,0,0]#,"b":#[0,0,0]#]#]# : int[int..int][{string}][int]

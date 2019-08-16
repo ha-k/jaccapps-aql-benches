@@ -1,0 +1,85 @@
+new boolean[3][3];
+
+define value b = new boolean[][3];
+b[0] = new boolean[2];
+b;
+b[1] = new boolean[4];
+b;
+b[1][3];
+b[2][0];
+b[0][3];
+
+define set (m : int[][][][]) =
+let i; j; k; l; in 
+   while i < m.size do
+     { j = 0;
+       while j < m[i].size do
+         { k = 0;
+           while k < m[i][j].size do
+             { l = 0;
+               while l < m[i][j][k].size do
+                 { m[i][j][k][l] = i+j+k+l;
+                   l = l+1;
+                 };
+               k = k+1;
+             };
+           j = j+1;
+         };
+       i = i+1;
+     };
+
+define see (m : int[][][][]) =
+let i; j; k; l; in 
+   while i < m.size do
+     { j = 0;
+       while j < m[i].size do
+         { k = 0;
+           while k < m[i][j].size do
+             { l = 0;
+               while l < m[i][j][k].size do
+                 { write(" "+m[i][j][k][l]+"");
+                   l = l+1;
+                 };
+               write("\t");
+               k = k+1;
+             };
+           write("\n");
+           j = j+1;
+         };
+       write("\n\n");
+       i = i+1;
+     };
+
+define value a = new int[2][2][2][2];
+
+set(a);
+see(a);
+
+define value intset = 4 + 8 + 9 + 17 + 12 + set{};
+define value ia = new <int,real>[intset];
+
+ia[2];
+ia[4] = <2,3.4>;
+ia;
+
+define value strset = "toto" + "titi" + "tata" + set{};
+define value sa = new real[strset][4..8];
+sa;
+
+sa["titi"][5] = 3.14;
+sa;
+sa["tata"];
+sa["titi"];
+
+define value prset = <1,2.3> + <4,5.6> + set{};
+define value pa = new string[prset];
+pa;
+
+pa[<4,5.6>] = "hello";
+pa[<1,2.3>] = "good bye";
+pa;
+pa[<1,2.3>];
+pa[<4,5.6>];
+pa[<1,5.6>];
+
+new int[1..2][set{"a","b"}][3];

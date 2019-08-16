@@ -1,0 +1,29 @@
+define sp (n : int) = let s = set{};
+                       i = 0;
+                    in { while i < n
+		            do let j = 0;
+                                in { while j < n
+                                        do { (<i,j>)+s;
+                                             j = j+1;
+                                           };
+                                     i = i+1;
+                                   };
+                         s;
+                       };
+
+define test (n:int) = let S = sp(n);
+                   in  [+,set{}] { [+,0] { b | <a,a+1> <- S}
+                                 | <a,b> <- S
+                                 , <b,a> <- S
+                             };
+
+
+define ptest (n:int) = let S = sp(n);
+                    in  [+,set{}] { b
+                                  | <a,b> <- S
+                                  , <b,a> <- S
+				  , <a,a+1> <- S
+                             };
+
+test(10);
+ptest(10);

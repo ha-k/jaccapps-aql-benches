@@ -1,0 +1,87 @@
+define value s1 = set {4,2,6,7,3,8};
+s1.ord(7);
+s1.ord(17);
+s1.first;
+s1.last;
+s1.next(s1.first);
+s1.prev(s1.last);
+s1.next(s1.last);
+s1.prev(s1.first);
+s1.nextc(s1.last);
+s1.prevc(s1.first);
+s1.size;
+s1.copy;
+
+define value s2 = set {"a", "b", "c" };
+s2.ord("b");
+s2.ord("z");
+s2.first;
+s2.last;
+s2.next(s2.first);
+s2.prev(s2.last);
+s2.next(s2.last);
+s2.prev(s2.first);
+s2.nextc(s2.last);
+s2.prevc(s2.first);
+s2.size;
+s2.copy;
+
+define value s3 = set { 1.2, 3.4, 5.6, 7.8};
+s3.ord(3.4);
+s3.ord(3.14);
+s3.first;
+s3.last;
+s3.next(s3.first);
+s3.prev(s3.last);
+s3.next(s3.last);
+s3.prev(s3.first);
+s3.nextc(s3.last);
+s3.prevc(s3.first);
+s3.size;
+s3.copy;
+
+define value A = set{"a","b","c","d"};
+define value B = set{"d","e","x","a","y","u"};
+define value C = set{"b","a","e","c","f","d"};
+
+A C= C;
+B C= C;
+
+A U B;
+A ^ B;
+A I B;
+A - B;
+
+A U= B;
+A;
+
+A = set{"a","b","c","d"};
+A I= B;
+A;
+
+A = set{"a","b","c","d"};
+A ^= B;
+A;
+
+A = set{"a","b","c","d"};
+A -= B;
+A;
+
+A = set{"a","b","c","d"};
+A =U B;
+B;
+
+B = set{"d","e","x","a","y","u"};
+A =I B;
+B;
+
+B = set{"d","e","x","a","y","u"};
+A =^ B;
+B;
+
+B = set{"d","e","x","a","y","u"};
+[=U,set{}] { x | x <- set{A,B,C} };
+
+A;
+B;
+C;

@@ -1,0 +1,25 @@
+//#code;
+
+// factors(n) returns the factors of n:
+define factors (n:int) = [+,set{}] { d | d <- 1..n, n % d == 0 };
+
+// isPrime(n) is true if and only if n is a prime number:
+define isPrime (n:int) = factors(n).size == 2;
+
+// primes(n) returns the set of prime numbers that are less than or equal to n:
+define primes (n:int) = [+,set{}] { p | p <- 1..n, p.isPrime };
+
+// pyth(n) returns the set of all triples in [1..n] that satisfy Pythagoras' formula:
+define pyth (n:int) = [+,set{}] { <x,y,z> | x <- 1..n, y <- 1..x, z <- 1..y,
+                                            x*x == y*y + z*z };
+
+
+{
+  write("\nComputing the set of primes between 1 and 100: primes(100); ...\n");
+  primes(100);
+};
+
+{
+  write("\nComputing the set of Pythagorean triples between 1 and 50: pyth(50); ...\n");
+  pyth(50);
+};

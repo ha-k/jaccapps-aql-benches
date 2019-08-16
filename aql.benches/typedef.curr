@@ -1,0 +1,18 @@
+*** Defined new type INT = int
+*** Defined f : INT -> int
+*** Defined one : INT
+*** Static Semantics Error: (typing) incompatible type: no type allowed for 'f' fits forall A. int -> A - see typedef.aql (line 7, columns 1..2)
+2 : int
+*** Defined new type Pair(A,B) = <A,B>
+*** Defined g : Pair(int,real) -> Pair(real,string)
+*** Defined p : Pair(int,real)
+<3.3,"hello"> : Pair(real,string)
+*** Defined new type NINT = INT
+*** Defined none : NINT
+1 : int
+1 : INT
+1 : int
+1 : NINT
+3 : INT
+4 : NINT
+*** Static Semantics Error: (typing) incompatible type: int, INT - see typedef.aql (line 36, columns 1..3)

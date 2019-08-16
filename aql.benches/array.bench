@@ -1,0 +1,14 @@
+9,10c9,10
+< *** Dynamic Semantics Error: (null value) can't access element of a null array - see array.aql (line 9, columns 1..8)
+< *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 10, columns 1..8)
+---
+> *** Dynamic Semantics Error: (null value) can't access element of a null array - see array.aql (line 9, columns 1...8)
+> *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 10, columns 1...8)
+29c29
+< *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 61, columns 1..6)
+---
+> *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 61, columns 1...6)
+51c51
+< *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 83, columns 1..12)
+---
+> *** Dynamic Semantics Error: (array bound violation) - see array.aql (line 83, columns 1...12)

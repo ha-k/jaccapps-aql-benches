@@ -1,0 +1,7 @@
+define a (f,x) = f(x);
+define c (k) = let x=0; in a(k,x);
+define i (x) = x;
+define j (x:int) = x;
+
+c(i);
+c(j);

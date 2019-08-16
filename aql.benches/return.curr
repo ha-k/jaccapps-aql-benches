@@ -1,0 +1,18 @@
+*** Static Semantics Error: (typing) not within an exitable scope - see return.aql (line 3, columns 1..9)
+*** Defined f : int -> int
+hello
+1 : int
+*** Defined g : int -> int
+hello
+0 : int
+hello
+world!
+1 : int
+*** Defined h : void -> string
+"hello" : string
+*** Static Semantics Error: (typing) incompatible type: string, int - see return.aql (line 13, column 16).. (line 14, column 11)
+*** Defined foo : int -> string
+"the result is : 2..." : string
+"Gotcha!" : string
+"the result is : 6..." : string
+"too big!" : string

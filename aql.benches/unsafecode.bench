@@ -1,0 +1,30 @@
+6,9c6,9
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 1..5)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see unsafecode.aql (line 7, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 7, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 1...5)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see unsafecode.aql (line 7, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 7, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 7, columns 16...20)
+11,14c11,14
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 1..5)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 1...5)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see unsafecode.aql (line 9, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 9, columns 16...20)
+16,19c16,19
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 1..5)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 1...5)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see unsafecode.aql (line 11, columns 16...20)

@@ -1,0 +1,54 @@
+<> : <>
+#[#[null,null,null]#,#[null,null,null]#]# : <int,real>[int][int]
+*** Defined t : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+<1,1.2,"a",'a',true,<1,1.2,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+*** Static Semantics Error: (typing) bad tuple field position: 0 is not in [1,6] range - see tuple.aql (line 7, column 3)
+1 : int
+1.2 : real
+"a" : string
+'a' : char
+true : boolean
+<1,1.2,"a",'a',true> : <int,real,string,char,boolean>
+*** Static Semantics Error: (typing) bad tuple field position: 7 is not in [1,6] range - see tuple.aql (line 14, column 3)
+2 : int
+<2,1.2,"a",'a',true,<1,1.2,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+2.3 : real
+<2,2.3,"a",'a',true,<1,1.2,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+"b" : string
+<2,2.3,"b",'a',true,<1,1.2,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+'b' : char
+<2,2.3,"b",'b',true,<1,1.2,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+false : boolean
+<2,2.3,"b",'b',false,<1,1.2,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+3 : int
+<2,2.3,"b",'b',false,<3,1.2,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+3.14 : real
+<2,2.3,"b",'b',false,<3,3.14,"a",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+"..." : string
+<2,2.3,"b",'b',false,<3,3.14,"...",'a',true>> : <int,real,string,char,boolean,<int,real,string,char,boolean>>
+*** Defined n : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+<i:=1,r:=1.2,s:="a",c:='a',b:=true,t:=<1,1.2,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+*** Static Semantics Error: (typing) bad tuple field position: 0 is not in [1,6] range - see tuple.aql (line 35, column 3)
+1 : int
+1.2 : real
+"a" : string
+'a' : char
+true : boolean
+<1,1.2,"a",'a',true> : <int,real,string,char,boolean>
+*** Static Semantics Error: (typing) bad tuple field name: "z" is not in {i, r, s, c, b, t} - see tuple.aql (line 42, column 3)
+2 : int
+<i:=2,r:=1.2,s:="a",c:='a',b:=true,t:=<1,1.2,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+2.3 : real
+<i:=2,r:=2.3,s:="a",c:='a',b:=true,t:=<1,1.2,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+"b" : string
+<i:=2,r:=2.3,s:="b",c:='a',b:=true,t:=<1,1.2,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+'b' : char
+<i:=2,r:=2.3,s:="b",c:='b',b:=true,t:=<1,1.2,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+false : boolean
+<i:=2,r:=2.3,s:="b",c:='b',b:=false,t:=<1,1.2,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+3 : int
+<i:=2,r:=2.3,s:="b",c:='b',b:=false,t:=<3,1.2,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+3.14 : real
+<i:=2,r:=2.3,s:="b",c:='b',b:=false,t:=<3,3.14,"a",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>
+"..." : string
+<i:=2,r:=2.3,s:="b",c:='b',b:=false,t:=<3,3.14,"...",'a',true>> : <i:int,r:real,s:string,c:char,b:boolean,t:<int,real,string,char,boolean>>

@@ -1,0 +1,17 @@
+"This is inc.aql..." : string
+*** Pragma 'include' - reading from file: inc1
+"This is inc1..." : string
+*** Pragma 'include' - reading from file: inc2
+"This is inc2..." : string
+*** Pragma 'include' - reading from file: inc3
+"This is inc3..." : string
+*** Pragma 'include' - reading from file: inc.aql
+*** Syntax Error: circular file inclusion of file: inc.aql - see inc3 (line 3, columns 10..18)
+"This is again inc3..." : string
+*** Static Semantics Error: (typing) incompatible type: int, void - see inc3 (line 7, columns 1..6)
+"This is again inc2..." : string
+*** Static Semantics Error: (typing) incompatible type: int, boolean - see inc2 (line 7, columns 1..9)
+"This is again inc1..." : string
+*** Static Semantics Error: (typing) incompatible type: int, string - see inc1 (line 7, columns 1..8)
+"This is again inc.aql..." : string
+*** Static Semantics Error: (typing) incompatible type: int, real - see inc.aql (line 7, columns 1..6)

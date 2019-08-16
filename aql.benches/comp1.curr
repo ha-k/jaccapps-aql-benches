@@ -1,0 +1,6 @@
+*** Defined t : {int}
+{1,4,2} : {int}
+*** Defined u : {int}
+{1,4,6} : {int}
+{<1,2>} : {<int,int>}
+{<1,2>} : {<int,int>}

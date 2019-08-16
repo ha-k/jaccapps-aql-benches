@@ -1,0 +1,5 @@
+*** Defined sp : int -> {<int,int>}
+*** Defined test : int -> {int}
+*** Defined ptest : int -> {int}
+{0,1,2,3,4,5,6,7,8,9} : {int}
+{0,1,2,3,4,5,6,7,8,9} : {int}

@@ -1,0 +1,5 @@
+define value t = set{1,4,2};
+define value u = set{1,4,6};
+
+[+,set{}] { <i,k> | i <- t, j <- u, i in u, i != 4, k <- t, !(k in u) };
+[+,set{}] { <i,k> | i <- t, j <- u, i <- u, i != 4, k <- t, !(k in u) };

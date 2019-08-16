@@ -1,0 +1,84 @@
+define S (f,g,x) = f(x)(g(x));
+define K (x,y)   = x;
+define I (x)     = x;
+
+define B (f,g,x) = f(g(x));
+define C (f,g,x) = f(x)(g);
+
+define Sp (c,f,g,x) = c(f(x))(g(x));
+define Bp (c,f,g,x) = c(f(g(x)));
+define Cp (c,f,g,x) = c(f(x))(g);
+
+S(K);
+S(K,K);
+S(K,K,K);
+S(K,K,K,K);
+S(K,K,K,K,K);
+S(K,K,K,K,K,K);
+
+S(K)(1);
+S(K,K)(1);
+S(K,K,K)(1);
+S(K,K,K,K)(1);
+S(K,K,K,K,K)(1);
+S(K,K,K,K,K,K)(1);
+
+S(K)(true);
+S(K,K)(true);
+S(K,K,K)(true);
+S(K,K,K,K)(true);
+S(K,K,K,K,K)(true);
+S(K,K,K,K,K,K)(true);
+
+let x:int; b = true;
+in { write(x = x+1); if b then write(x-1) else write(x+1); };
+
+define foo(n:int) = if n>0 then 1 else 2;
+foo(0);
+foo(1);
+
+define fact(n) = let m; in { m = 1; while n>0 do { m = m*n; n = n-1; }; m; };
+fact(10);
+
+define signature aux : (int,int) -> int;
+define aux(n:int,m:int) = if n==0 then m else aux(n-1,n*m);
+define rfact(n) = aux(n,1);
+rfact(10);
+
+define signature rrfact : int -> int;
+define rrfact(n) = if n==0 then 1 else n*rrfact(n-1);
+rrfact(10);
+
+define signature f : int -> int;
+define signature g : int -> int;
+define signature h : int -> int;
+define signature k : int -> int;
+
+define f (n) = if n==0 then g(0)+h(1) else 3;
+f(1);g(1);h(1);k(1);
+define g (n) = if n==0 then h(1)-k(2) else 2;
+f(1);g(1);h(1);k(1);
+define h (n) = if n==0 then k(2)*f(3) else 1;
+f(1);g(1);h(1);k(1);
+define k (n) = if n==0 then g(3)%h(4) else 0;
+f(1);g(1);h(1);k(1);
+
+define a (f,x) = f(x);
+define b (k) = a(k,1);
+define c (k) = let x:int; in a(k,x);
+define d (k) = let x=true; in a(k,x);
+define i (x) = x;
+define j (x:int) = x;
+define l (x:boolean) = x;
+
+c(i);
+c(j);
+ 
+d(i);
+d(l);
+ 
+define x = while false do write(0);
+ 
+x;
+
+write("That's all, Folks!...\n");

@@ -1,0 +1,26 @@
+15c15
+< *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, int - see ski.aql (line 19, columns 1..5)
+---
+> *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, int - see ski.aql (line 19, columns 1...5)
+21c21
+< *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, boolean - see ski.aql (line 26, columns 1..5)
+---
+> *** Static Semantics Error: (typing) incompatible type: forall A,B. A -> B, boolean - see ski.aql (line 26, columns 1...5)
+46,48c46,48
+< *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see ski.aql (line 58, columns 6..10)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 58, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 58, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] g : int -> int - see ski.aql (line 58, columns 6...10)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 58, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 58, columns 16...20)
+52,53c52,53
+< *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 60, columns 11..15)
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 60, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] h : int -> int - see ski.aql (line 60, columns 11...15)
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 60, columns 16...20)
+58c58
+< *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 62, columns 16..20)
+---
+> *** Dynamic Semantics Error: (unsafe code) [undefined] k : int -> int - see ski.aql (line 62, columns 16...20)

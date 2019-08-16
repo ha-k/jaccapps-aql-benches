@@ -1,0 +1,7 @@
+"This is inc2...";
+
+#include "inc3";
+
+"This is again inc2...";
+
+1:boolean;

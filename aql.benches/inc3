@@ -1,0 +1,7 @@
+"This is inc3...";
+
+#include "inc.aql";
+
+"This is again inc3...";
+
+1:void;

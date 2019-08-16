@@ -1,0 +1,28 @@
+// Tests for non-local return;
+
+return 1;
+define f(x:int) = { write("hello\n"); return 1; write("world!\n"); x; };
+f(0);
+define g(x:int) =
+{ write("hello\n"); if x==0 then return else -1; write("world!\n"); x; };
+g(0);
+g(1);
+define h () = return "hello";
+h();
+define i(x:int) =
+{ if x==0 then return "hello"
+          else if x > 0 then return "goodbye"
+                        else return "adios";
+  x;
+}; 
+define foo(x) =
+    let y = 2*x;
+    in if (y+1)%3 == 0 then return "Gotcha!"
+                       else let z = y+2;
+                            in if z > 100
+                               then return "too big!"
+                               else "the result is : "+z+"...";
+foo(0);
+foo(1);
+foo(2);
+foo(200);

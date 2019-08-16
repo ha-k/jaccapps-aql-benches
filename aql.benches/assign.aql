@@ -1,0 +1,10 @@
+let a = #[1]#;          in a[0] = wrapInt(2);
+let a = #[wrapInt(1)]#; in a[0] = 2;
+
+let a = <1>;            in a@1 = wrapInt(2);
+let a = <wrapInt(1)>;   in a@1 = 2;
+
+class Foo { a : int = wrapInt(1); };
+let foo = new Foo; in foo.a = wrapInt(2);
+class Bar { a : [int] = 1; };
+let bar = new Bar; in bar.a = 2;

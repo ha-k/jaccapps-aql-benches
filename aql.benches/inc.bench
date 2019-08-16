@@ -1,0 +1,20 @@
+9c9
+< *** Syntax Error: circular file inclusion of file: inc.aql - see inc3 (line 3, columns 10..18)
+---
+> *** Syntax Error: circular file inclusion of file: inc.aql - see inc3 (line 3, columns 10...18)
+11c11
+< *** Static Semantics Error: (typing) incompatible type: int, void - see inc3 (line 7, columns 1..6)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, void - see inc3 (line 7, columns 1...6)
+13c13
+< *** Static Semantics Error: (typing) incompatible type: int, boolean - see inc2 (line 7, columns 1..9)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, boolean - see inc2 (line 7, columns 1...9)
+15c15
+< *** Static Semantics Error: (typing) incompatible type: int, string - see inc1 (line 7, columns 1..8)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, string - see inc1 (line 7, columns 1...8)
+17c17
+< *** Static Semantics Error: (typing) incompatible type: int, real - see inc.aql (line 7, columns 1..6)
+---
+> *** Static Semantics Error: (typing) incompatible type: int, real - see inc.aql (line 7, columns 1...6)

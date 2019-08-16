@@ -1,0 +1,24 @@
+*** Defined s : {int}
+{1,2,3} : {int}
+*** Defined rs : {real}
+{1.2,2.3,3.4,4.5,5.6} : {real}
+*** Defined d : int -> int
+*** Defined ds : int -> {int}
+*** Defined sq : real -> real
+*** Defined sq : int -> int
+*** Defined sqs : int -> {int}
+*** Defined i : forall A. A -> A
+*** Defined u6 : {int} -> {int}
+*** Defined is : forall A. A -> {A}
+*** Defined u6s : {int} -> {{int}}
+12 : int
+322560 : int
+69.89999999999999 : real
+{2,4,6} : {int}
+{2,6} : {int}
+{9} : {int}
+{"aa","bb","cc"} : {string}
+{1,2,3,4,5} : {int}
+{1,2,6,3,4,5} : {int}
+{{1,2},{3,4,5}} : {{int}}
+{{1,2,6},{3,4,5,6}} : {{int}}

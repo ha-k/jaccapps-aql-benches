@@ -1,0 +1,13 @@
+class Foo (A) { a : A; }
+
+new Foo(real);
+
+class Bar(A,B) { a : A; b : B; }
+
+define type alias Buz(A) = Bar(A,A);
+
+new Buz(int);
+
+define type name Boz(A) = Bar(A,A);
+
+new Boz(int);

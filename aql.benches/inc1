@@ -1,0 +1,7 @@
+"This is inc1...";
+
+#include "inc2";
+
+"This is again inc1...";
+
+1:string;

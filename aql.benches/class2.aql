@@ -1,0 +1,22 @@
+class Pair(A,B)
+  {
+    fst : A;
+    snd : B;
+
+    method setFst :     A -> Pair(A,B);
+    method setSnd :     B -> Pair(A,B);
+    method allocate    : (A,B) -> Pair(A,B);
+  }
+  {
+    setFst (x) = { this.fst = x; this; };
+    setSnd (x) = { this.snd = x; this; };
+    allocate (x, y) = this.setFst(x).setSnd(y);
+  }
+
+define Pair = new Pair.allocate;
+
+define swap (p) = let tmp=p.fst; in { p.fst = p.snd; p.snd = tmp; p; };
+
+define value p = Pair(1,2);
+
+p = p.swap;

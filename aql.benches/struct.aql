@@ -1,0 +1,30 @@
+structure foo { a : int, b : string };
+structure bar { a : int, b : string };
+
+define value p = <1,"hello"> as foo;
+define value q:bar = <2,"world">;
+
+p = q;
+q = p;
+
+p.a;
+p.b;
+p;
+p.a = 2;
+p.b = "world";
+p;
+
+define value S:{foo} = set { <1,"1">
+                           , <2,"2">
+                           , <3,"3">
+                           , <4,"4">
+                           , <5,"5">
+                           , <6,"6">
+                           , <7,"7">
+                           , <8,"8">
+                           , <9,"9">
+                           };
+
+[+,set{}] { b | <a,b> <- S, a%2 == 0 };
+
+[+,set{}] { x | x <- S, x@1%2 == 0 };

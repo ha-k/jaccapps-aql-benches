@@ -1,0 +1,79 @@
+*** Defined s1 : {int}
+{4,2,6,7,3,8} : {int}
+3 : int
+*** Dynamic Semantics Error: (no such element) 17 doesn't belong to this set - see set.aql (line 3, columns 1..11)
+4 : int
+8 : int
+2 : int
+3 : int
+*** Dynamic Semantics Error: (no such element) 8 has no successor in this set - see set.aql (line 8, columns 1..17)
+*** Dynamic Semantics Error: (no such element) 4 has no predecessor in this set - see set.aql (line 9, columns 1..18)
+4 : int
+8 : int
+6 : int
+{4,2,6,7,3,8} : {int}
+*** Defined s2 : {string}
+{"a","b","c"} : {string}
+1 : int
+*** Dynamic Semantics Error: (no such element) z doesn't belong to this set - see set.aql (line 17, columns 1..12)
+"a" : string
+"c" : string
+"b" : string
+"b" : string
+*** Dynamic Semantics Error: (no such element) c has no successor in this set - see set.aql (line 22, columns 1..17)
+*** Dynamic Semantics Error: (no such element) a has no predecessor in this set - see set.aql (line 23, columns 1..18)
+"a" : string
+"c" : string
+3 : int
+{"a","b","c"} : {string}
+*** Defined s3 : {real}
+{1.2,3.4,5.6,7.8} : {real}
+1 : int
+*** Dynamic Semantics Error: (no such element) 3.14 doesn't belong to this set - see set.aql (line 31, columns 1..13)
+1.2 : real
+7.8 : real
+3.4 : real
+5.6 : real
+*** Dynamic Semantics Error: (no such element) 7.8 has no successor in this set - see set.aql (line 36, columns 1..17)
+*** Dynamic Semantics Error: (no such element) 1.2 has no predecessor in this set - see set.aql (line 37, columns 1..18)
+1.2 : real
+7.8 : real
+4 : int
+{1.2,3.4,5.6,7.8} : {real}
+*** Defined A : {string}
+{"a","b","c","d"} : {string}
+*** Defined B : {string}
+{"d","e","x","a","y","u"} : {string}
+*** Defined C : {string}
+{"b","a","e","c","f","d"} : {string}
+true : boolean
+false : boolean
+{"a","b","c","d","e","x","y","u"} : {string}
+{"b","c","e","x","y","u"} : {string}
+{"a","d"} : {string}
+{"b","c"} : {string}
+{"a","b","c","d","e","x","y","u"} : {string}
+{"a","b","c","d","e","x","y","u"} : {string}
+{"a","b","c","d"} : {string}
+{"a","d"} : {string}
+{"a","d"} : {string}
+{"a","b","c","d"} : {string}
+{"b","c","e","x","y","u"} : {string}
+{"b","c","e","x","y","u"} : {string}
+{"a","b","c","d"} : {string}
+{"b","c"} : {string}
+{"b","c"} : {string}
+{"a","b","c","d"} : {string}
+{"d","e","x","a","y","u","b","c"} : {string}
+{"d","e","x","a","y","u","b","c"} : {string}
+{"d","e","x","a","y","u"} : {string}
+{"d","a"} : {string}
+{"d","a"} : {string}
+{"d","e","x","a","y","u"} : {string}
+{"e","x","y","u","b","c"} : {string}
+{"e","x","y","u","b","c"} : {string}
+{"d","e","x","a","y","u"} : {string}
+{"a","b","c","d","e","x","y","u","f"} : {string}
+{"a","b","c","d"} : {string}
+{"d","e","x","a","y","u"} : {string}
+{"b","a","e","c","f","d"} : {string}
